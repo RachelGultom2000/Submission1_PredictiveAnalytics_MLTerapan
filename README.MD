@@ -187,5 +187,3 @@ Metrik
 York: John Wiley & Sons, Inc
 - Peng, Chao-Ying Joanne dkk. 2002. “An Introduction to Logistic Regression Analysis and Reporting”.
 The Journal of Educational Research Indiana University Bloomington Vol. 96 No. 1.
-
- 
