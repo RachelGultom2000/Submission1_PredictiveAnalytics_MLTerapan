@@ -122,7 +122,7 @@ Dari hasil yang didapat, dapat disimpulkan bahwa algoritma Logistic Regression m
 - Logistic Regression : 0.937 (93%)
 - Random Forest : 0.039 (3.9%) 
 
-         ![](img/metrik.png)
+   ![](img/akurasi_algo.PNG)
 
       
 ## Evaluasi
