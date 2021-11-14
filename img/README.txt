@@ -1,0 +1,1 @@
+Link Github (README.MD) : https://github.com/RachelGultom2000/Submission1_PredictiveAnalytics_MLTerapan/blob/master/README.md
