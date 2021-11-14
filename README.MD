@@ -74,13 +74,11 @@ atau dapat didownload [disini](https://www.kaggle.com/fedesoriano/stroke-predict
     
 ---
 
-# Standarisasi
-Standarisasi digunakan ketika algoritma membutuhkan data yang terdistribusi normal misalnya untuk algoritma Logistic Regression.Umumnya standarisasi akan berfokus kepada pemusatan variabel pada nol dan varians pada satu atau menjadi True/False. Contohnya, didalam sebuah kolom dataset umumnya akan terdapat nilai yang bukan bawaan dari dataset,yaitu nilai 0 dan 1 ,dan ini berubah ketika standarisasi telah dilakukan.
-
 
 # Data Preparation
 - Menghapus kolom yang kurang relevan atau baik untuk prediksi seperti kolom yang mengandung tipe data string.
 - Mengisi missing value (NaN) dengan nilai median,dengan tujuan membantu "menormalkan" data yang hilang.
+- Proses standarisasi membantu dalam membuat fitur data menjadi bentuk yang lebih mudah diolah oleh algoritma.StandardScaller melakukan proses standarisasi dengan mengurangkan mean atau nilai rata rata kemudian membaginya dengan standar deviasi untuk menggeser nilai distribusi.Menghasilkan distribusi dengan standar deviasi sama dengan 1 dan mean sama dengan 0.
 - Scalling dengan Standard Scaler dari sklearn,dengan tujuan membuat numerik dari data agar dapat diproses atau dibaca oleh mesin.
 - Train/Test split atau train_test_split merupakan salah satu metode yang digunakan untuk mengevaluasi performa model machine learning.Metode ini membagi dataset menjadi 2 bagian yaitu dataset untuk training dan dataset untuk testing dan sudah ditentukan proporsi pembagiannya,umumnya data train 80% dan data test 20%, atau data train 75% dan data test 25%,tergantung kebutuhan.Penggunaan train_test_split ini juga sangat dianjurkan untuk dataset yang berukuran besar atau bisa juga untuk multiclass.
 **Suatu model dikatakan baik jika akurasi yang dihasilkan tinggi dan yang pasti tidak sering terjadi overfitting**
@@ -119,6 +117,12 @@ Tahapan yang dilakukan :
 1. Mendefinisikan metode atau algoritma yang digunakan ,disini adalah Logistic Regression & Random Forest.
 2. Melakukan train data atau fitting menggunakan kedua algoritma tersebut dengan dataset yang sama yaitu dataset trainning.
 3. Melakukan testing pada dataset test agar mendapatkan hasil untuk implementasi ke model.
+
+Dari hasil yang didapat, dapat disimpulkan bahwa algoritma Logistic Regression memiliki akurasi yang jauh lebih baik daripada algoritma Random Forest,berikut detailnya:
+- Logistic Regression : 0.937 (93%)
+- Random Forest : 0.039 (3.9%) 
+
+        ![](img/akurasi_algo.PNG)
 
 
       
@@ -184,7 +188,4 @@ York: John Wiley & Sons, Inc
 - Peng, Chao-Ying Joanne dkk. 2002. “An Introduction to Logistic Regression Analysis and Reporting”.
 The Journal of Educational Research Indiana University Bloomington Vol. 96 No. 1.
 
-
-  
-  
-   
+ 
